@@ -2,8 +2,13 @@
 import Image from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
+
+function RoundedImage(props: any) {
+  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+}
+
 const components = {
-  Image,
+  Image: RoundedImage,
 }
 
 interface MdxProps {
