@@ -147,9 +147,10 @@ export default function Home() {
       </p>
 
       <div className="my-8 justify-between flex flex-col">
-        <h2 className="font-bold text-3xl tracking-tighter">Projects</h2>
-        <div className="grid gap-4 pt-6 relative">
-          <div className="md:p-12 p-8 pt-6 pb-24 md:pb-32 md:pt-8 rounded-3xl border">
+        <h2 className="font-bold text-3xl tracking-tighter mb-6">Projects</h2>
+        <div className="grid gap-4 relative group">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+          <div className="md:p-12 p-8 pt-6 pb-24 md:pb-32 md:pt-8 dark:bg-black bg-white rounded-3xl border relative">
             <h3 className="font-semibold text-2xl mt-4">Microbrokers</h3>
             <p className=" text-lg mt-4 font-semibold ">
               An Open Source Trading Dashboard
