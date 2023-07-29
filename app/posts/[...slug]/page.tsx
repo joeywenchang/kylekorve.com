@@ -5,6 +5,8 @@ import { Metadata } from "next"
 import { Mdx } from "@/components/mdx-components"
 import { customDate, timeAgo } from "@/lib/time"
 
+export const revalidate = 60
+
 interface PostProps {
   params: {
     slug: string[]

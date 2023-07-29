@@ -148,35 +148,31 @@ export default function Home() {
 
       <div className="my-8 justify-between flex flex-col">
         <h2 className="font-bold text-3xl tracking-tighter">Projects</h2>
-        <div className="md:grid-cols-2 grid my-8 gap-4">
-          <span className="border min-h-[150px] flex-col justify-between border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-4 text-sm inline-flex items-start ">
-            <div className="flex flex-col gap-4">
-              <span className="flex items-center gap-2">
-                <Image
-                  src="/favicon.ico"
-                  width={24}
-                  height={24}
-                  alt="project icon"
-                  className="dark:invert"
-                />
-                <h3 className="font-bold text-xl tracking-tighter">
-                  Microbrokers
-                </h3>
-              </span>
-              <p className="font-bold text-sm tracking-tighter">
-                An open source trading dashboard
-              </p>
-            </div>
-
-            <div className="flex items-center gap-2 justify-between w-full">
-              <h3 className="font-bold text-md tracking-tighter border rounded p-2 py-1">
+        <div className="grid gap-4 pt-6 relative">
+          <div className="md:p-12 p-8 pt-6 pb-24 md:pb-32 md:pt-8 rounded-3xl border">
+            <h3 className="font-semibold text-2xl mt-4">Microbrokers</h3>
+            <p className=" text-lg mt-4 font-semibold ">
+              An Open Source Trading Dashboard
+            </p>
+            <div className="flex items-center justify-between absolute inset-x-0 bottom-0 p-8 pb-6  md:p-12">
+              <Link
+                href="https://github.com/kylekorv3/microbrokers"
+                target="_blank"
+                title=""
+                rel="noopener"
+              >
                 View Repo
-              </h3>
-              <h3 className="font-bold text-md tracking-tighter border rounded p-2 py-1">
+              </Link>
+              <Link
+                href="https://microbrokers.io"
+                target="_blank"
+                title=""
+                rel="noopener"
+              >
                 View Demo
-              </h3>
+              </Link>
             </div>
-          </span>
+          </div>
         </div>
       </div>
       <Link className="my-8 justify-between flex items-center" href="/posts">
