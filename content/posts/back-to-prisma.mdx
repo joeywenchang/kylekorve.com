@@ -1,0 +1,43 @@
+---
+title: Back to Prisma
+description: prisma is coming back
+date: "2023-07-29"
+---
+
+## Introduction
+
+Prisma is an sql-orm for typescript. With excellent DX, it gains a lot of favorite among Fullstack Developers. 
+
+But it really sucks in serverless environment, it takes a distinct delay for a GraphQL cold start time.
+
+And this time an alternative solution **Drizzle Orm** come into my view.
+
+Just like Prisma, Drizzle Orm provides type-safety and easy to use query-chain syntax
+
+and fast query execution. 
+
+But it has these Cons
+- In an early stage (Many features are not stable)
+- Not unified support (MySQL, PostgreSQL, SQLite)
+- Has to do a little setup to use drizzle-kit
+
+After hearing Prisma v5 update, I go back to give it a try.
+[In Prisma v5](https://www.prisma.io/blog/prisma-5-f66prwkjx72s), they replace GraphQL Engine with JSON protocol
+and speed up to 9x times faster
+
+After a week ago using it, I thought prisma improves a lot, but drizzle orm is a little bit faster
+maybe 100ms vs 300ms. And I decide to come back. Here is the reasons
+
+1. Prisma has much more resources (community & ecosystems)
+2. Prisma is easy to deal with migrations
+3. Prisma schema is more precise and clearly
+
+But Drizzle is still faster.
+
+Conclusion, if you are a beginner to sql, please don't just write raw sql. Use it with orm
+to ensure type-safety and make your code structured. Prisma and Drizzle are both nice choices. 
+
+
+
+
+
